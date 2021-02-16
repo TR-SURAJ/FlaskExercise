@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+    </head>
+    <body>
+        <div>
+            <h2>Home Page for ML Apps</h2>
+        </div>
+        <div>
+            <form method = 'POST' action = "{{url_for('predict')}}">
+                <input type = "text" name = "firstname" placeholder="FirstName">
+                <input type = "text" name = "lastname" placeholder="LastName">
+                <button type ="reset">Reset</button>
+                <br/>
+                <button type ="submit" >Submit</button>
+                
+            </form>
+        </div>
+
+        <div>
+            <p>Your firstname is {{firstname}}</p>
+            <p>Your lastname is {{lastname}}</p>
+        </div>
+
+    </body>
+
+</html>

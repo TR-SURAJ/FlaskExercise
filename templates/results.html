@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Results
+        </title>
+    </head>
+<body>
+    <div>
+        <h2>Reults</h2>
+    </div>
+    <div>
+        <ul>
+            {% for user in userslist %}
+            <li>FirstName{{user.firstname}}</li>
+            <li>LastName{{user.lastname}}</li>
+        </ul>
+        {% endfor %}
+    </div>
+</body>
+</html>
